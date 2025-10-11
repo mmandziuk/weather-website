@@ -4,8 +4,79 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="base.css" />
+    <link rel="stylesheet" href="toolbar.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <title>Weather</title>
   </head>
-  <body></body>
-  <script src="script"></script>
+  <body>
+    <header class="container">
+      <div class="header">
+        <img src="img/logo.svg" class="logo" />
+        <div class="search-input">
+          <input
+            type="search"
+            id="site-search"
+            placeholder="Search Location..."
+          />
+          <img class="search-icon" src="img/fa_search.svg" alt="search-icon" />
+        </div>
+      </div>
+    </header>
+
+    <section class="weather-info container">
+      <div class="wrapper-weather-info">
+        <div class="degree">16°</div>
+        <div class="location-info">
+          <h1 class="city">London</h1>
+          <p class="date">06:09 - Monday, 9 Sep ‘23</p>
+        </div>
+        <div class="weather-icon">
+          <img src="img/outline.png" alt="Cloudy" />
+        </div>
+      </div>
+    </section>
+
+    <section class="sidebar container">
+      <div class="content">
+        <p class="content-subtitle">Weather Details...</p>
+        <h3 class="content-title">thunderstorm with light drizzle</h3>
+        <div class="weather-description">
+          <ul>
+            <li class="weather-description-item">
+              <p>Temp max</p>
+              <span>19°</span>
+              <img src="img/icons/Vector.svg" alt="icon" />
+            </li>
+            <li class="weather-description-item">
+              <p>Temp min</p>
+              <p>15°</p>
+              <img src="img/icons/Vector (1).svg" alt="icon" />
+            </li>
+            <li class="weather-description-item">
+              <p>Humadity</p>
+              <p>58%</p>
+              <img src="img/icons/outline.svg" alt="icon" />
+            </li>
+            <li class="weather-description-item">
+              <p>Cloudy</p>
+              <p>86%</p>
+              <img src="img/icons/outline (1).svg" alt="icon" />
+            </li>
+            <li class="weather-description-item">
+              <p>Wind</p>
+              <p>5km/h</p>
+              <img src="img/icons/outline (2).svg" alt="icon" />
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script src="script.js"></script>
 </html>

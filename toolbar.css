@@ -1,0 +1,40 @@
+.sidebar {
+  width: 40%;
+  background-color: transparent;
+  color: white;
+  padding: 25px;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  right: 0;
+  backdrop-filter: blur(5px);
+  z-index: -1;
+}
+
+.content {
+  margin-top: 13.2rem;
+}
+
+.content-subtitle {
+  font-size: 1.8rem;
+  margin-bottom: 5rem;
+}
+
+.content-title {
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  margin-bottom: 3rem;
+  font-weight: 400;
+}
+
+.weather-description-item {
+  text-decoration: none;
+  display: flex;
+  width: 35.4rem;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+}
+
+.weather-description-item p {
+  font-size: 1.8rem;
+}

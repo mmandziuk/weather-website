@@ -1,0 +1,20 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px; /* базовий розмір тексту: 1em = 10px */
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-image: url(img/dan-otis-OYFHT4X5isg-unsplash.jpg);
+  background-size: cover;
+  color: #fff;
+  line-height: 1.6;
+  position: relative;
+}

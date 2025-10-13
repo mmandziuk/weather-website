@@ -8,13 +8,13 @@ const year = document.querySelector(".year"),
   hours = document.querySelector(".hours");
 
 const days = [
+  "Sunday",
   "Monday",
   "Tuesday",
   "Wednesday",
   "Thursday",
   "Friday",
   "Saturday",
-  "Sunday",
 ];
 
 const months = [
@@ -36,6 +36,7 @@ let now = new Date();
 
 hours.textContent = now.getHours();
 minutes.textContent = now.getMinutes();
+numberDay.textContent = now.getDate();
 day.textContent = days[now.getDay()];
 month.textContent = months[now.getMonth()].slice(0, 3);
 year.textContent = now.getFullYear().toString().slice(-2);

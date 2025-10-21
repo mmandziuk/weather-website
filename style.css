@@ -85,14 +85,18 @@ input::-webkit-search-cancel-button {
   line-height: 1.6;
 }
 
-.weather-icon {
+.wrappper-weather-icon {
   width: 7rem;
   height: 12.5rem;
   display: flex;
   align-items: end;
 }
-.weather-icon img {
+.wrappper-weather-icon img {
   height: 7rem;
   width: 7rem;
   padding-bottom: 1rem;
+}
+
+.weather-description-item p {
+  width: 9rem;
 }

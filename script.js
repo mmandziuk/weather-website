@@ -60,7 +60,7 @@ const fetchJSON = (url) => fetch(url).then((response) => response.json());
 const getSearchLocation = async (value) => {
   try {
     const data = await fetchJSON(
-      `http://api.openweathermap.org/geo/1.0/direct?q=${value}&limit=1&appid=7191a96127dfbce98d4bf0728f9220a7`
+      `http://api.openweathermap.org/geo/1.0/direct?q=${value}&limit=1&appid=${1}`
     );
     const location = data[0];
     elements.locationTitle.textContent = location.name;
@@ -73,7 +73,7 @@ const getSearchLocation = async (value) => {
 const getCurrentWeather = async (lat, lon) => {
   try {
     const data = await fetchJSON(
-      `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=7191a96127dfbce98d4bf0728f9220a7&units=metric`
+      `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${1}&units=metric`
     );
     elements.tempDegree.textContent = Math.round(data.main.temp);
     elements.tempMax.textContent = Math.round(data.main.temp_max);

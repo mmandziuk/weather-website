@@ -3,8 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="base.css" /> -->
     <link rel="stylesheet" href="toolbar.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -18,7 +16,7 @@
     <header class="container">
       <div class="header">
         <img src="img/logo.svg" class="logo" />
-        <div class="search-input">
+        <!-- <div class="search-input">
           <input
             type="search"
             id="site-search"
@@ -26,7 +24,7 @@
           />
           <img class="search-icon" src="img/fa_search.svg" alt="search-icon" />
         </div>
-      </div>
+      </div> -->
     </header>
 
     <section class="weather-info container">
@@ -49,7 +47,16 @@
 
     <section class="sidebar container">
       <div class="content">
-        <p class="content-subtitle">Weather Details...</p>
+        <div class="search-input">
+          <input
+            type="search"
+            id="site-search"
+            placeholder="Search Location..."
+          />
+          <img class="search-icon" src="img/fa_search.svg" alt="search-icon" />
+        </div>
+      </div>
+        <p class="content-subtitle">Weather Details</p>
         <h3 class="content-title">thunderstorm with light drizzle</h3>
         <div class="weather-description">
           <ul>
@@ -83,6 +90,4 @@
       </div>
     </section>
   </body>
-  <!-- <script src="dist/bundle.js"></script> -->
-  <!-- <script src="src/script.js"></script> -->
 </html>

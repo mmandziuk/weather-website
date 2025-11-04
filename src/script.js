@@ -3,6 +3,7 @@
 import "./style.css";
 import "./base.css";
 import "./toolbar.css";
+import "./responsive.css";
 // import "./img/logo.svg";
 
 const elements = {
@@ -13,6 +14,7 @@ const elements = {
   minutes: document.querySelector(".minutes"),
   hours: document.querySelector(".hours"),
   input: document.getElementById("site-search"),
+  inputTablet: document.getElementById("site-search-tablet"),
   inputSearch: document.querySelector(".search-icon"),
   locationTitle: document.querySelector(".city"),
   tempDegree: document.querySelector(".num-degree"),
@@ -106,5 +108,19 @@ elements.inputSearch.addEventListener("click", () => {
   elements.input.value = "";
   getSearchLocation(searchLocationInput);
 });
+
+elements.inputTablet.addEventListener("keydown", (event) => {
+  if (event.key === "Enter") {
+    const searchLocationInput = elements.inputTablet.value;
+    elements.inputTablet.value = "";
+    getSearchLocation(searchLocationInput);
+  }
+});
+
+// elements.inputSearch.addEventListener("click", () => {
+//   const searchLocationInput = elements.inputTablet.value;
+//   elements.inputTablet.value = "";
+//   getSearchLocation(searchLocationInput);
+// });
 
 updateDateTime();

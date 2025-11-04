@@ -1,13 +1,9 @@
 .sidebar {
-  width: 35%;
   background-color: transparent;
   color: white;
   padding: 25px;
   height: 100vh;
-  position: absolute;
-  top: 0;
-  right: 0;
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(19px);
 }
 
 .content-subtitle {
@@ -25,16 +21,18 @@
 .weather-description-item {
   text-decoration: none;
   display: flex;
-  width: 35.4rem;
+  max-width: 35.4rem;
   justify-content: space-between;
   margin-bottom: 3rem;
 }
 
 .weather-description-item p {
   font-size: 1.8rem;
+  width: 9rem;
 }
 
-#site-search {
+#site-search,
+#site-search-tablet {
   padding: 14px 0;
   width: 371px;
   font-size: 2rem;
@@ -44,6 +42,7 @@
   margin-bottom: 7rem;
   color: #fff;
 }
+
 .search-input {
   display: flex;
 }

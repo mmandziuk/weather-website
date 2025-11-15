@@ -13,81 +13,87 @@
     <title>Weather</title>
   </head>
   <body>
-    <header class="container">
+<div class="grid-2-clm">
+
+  <section class="weather-info container ">
+    <header>
       <div class="header">
         <img src="img/logo.svg" class="logo" />
-        <!-- <div class="search-input">
+        <div class="search-input search-input-tablet">
           <input
             type="search"
-            id="site-search"
+            id="site-search-tablet"
             placeholder="Search Location..."
           />
           <img class="search-icon" src="img/fa_search.svg" alt="search-icon" />
         </div>
-      </div> -->
+      </div>
     </header>
+    <div class="wrapper-weather-info">
+      <div class="degree"><span class="num-degree">16</span>°</div>
+      <div class="location-info">
+        <h1 class="city">London</h1>
+        <p class="date">
+          <span class="hours">06</span>:<span class="minutes">09</span> -
+          <span class="day">Monday,</span> <span class="number-day">9</span>
+          <span class="month">Sep</span>
+          ‘ <span class="year">23</span>
+        </p>
+      </div>
+      <div class="wrappper-weather-icon">
+        <img class="weather-icon" src="img/outline.png" alt="Cloudy" />
+      </div>
+    </div>
+  </section>
 
-    <section class="weather-info container">
-      <div class="wrapper-weather-info">
-        <div class="degree"><span class="num-degree">16</span>°</div>
-        <div class="location-info">
-          <h1 class="city">London</h1>
-          <p class="date">
-            <span class="hours">06</span>:<span class="minutes">09</span> -
-            <span class="day">Monday,</span> <span class="number-day">9</span>
-            <span class="month">Sep</span>
-            ‘ <span class="year">23</span>
-          </p>
-        </div>
-        <div class="wrappper-weather-icon">
-          <img class="weather-icon" src="img/outline.png" alt="Cloudy" />
-        </div>
-      </div>
-    </section>
+  <div class="line-sidebar"></div>
 
-    <section class="sidebar container">
-      <div class="content">
-        <div class="search-input">
-          <input
-            type="search"
-            id="site-search"
-            placeholder="Search Location..."
-          />
-          <img class="search-icon" src="img/fa_search.svg" alt="search-icon" />
-        </div>
+  <section class="sidebar">
+    <div class="wraper-sidebar">
+    <div class="content">
+      <div class="search-input search-input-desc">
+        <input
+          type="search"
+          id="site-search"
+          placeholder="Search Location..."
+        />
+        <img class="search-icon" src="img/fa_search.svg" alt="search-icon" />
       </div>
-        <p class="content-subtitle">Weather Details</p>
-        <h3 class="content-title">thunderstorm with light drizzle</h3>
-        <div class="weather-description">
-          <ul>
-            <li class="weather-description-item">
-              <p>Temp max</p>
-              <p><span class="temp-max">19</span>°</p>
-              <img src="img/icons/Vector.svg" alt="icon" />
-            </li>
-            <li class="weather-description-item">
-              <p>Temp min</p>
-              <p><span class="temp-min">15</span>°</p>
-              <img src="img/icons/Vector (1).svg" alt="icon" />
-            </li>
-            <li class="weather-description-item">
-              <p>Humadity</p>
-              <p><span class="humadity">58</span>%</p>
-              <img src="img/icons/outline.svg" alt="icon" />
-            </li>
-            <li class="weather-description-item">
-              <p>Cloudy</p>
-              <p><span class="cloudy">86</span>%</p>
-              <img src="img/icons/outline (1).svg" alt="icon" />
-            </li>
-            <li class="weather-description-item">
-              <p>Wind</p>
-              <p><span class="wind">5</span> km/h</p>
-              <img src="img/icons/outline (2).svg" alt="icon" />
-            </li>
-          </ul>
-        </div>
+    </div>
+      <p class="content-subtitle">Weather Details</p>
+      <h3 class="content-title">thunderstorm with light drizzle</h3>
+      <div class="weather-description">
+        <ul>
+          <li class="weather-description-item">
+            <p>Temp max</p>
+            <p><span class="temp-max">19</span>°</p>
+            <img src="img/icons/Vector.svg" alt="icon" />
+          </li>
+          <li class="weather-description-item">
+            <p>Temp min</p>
+            <p><span class="temp-min">15</span>°</p>
+            <img src="img/icons/Vector (1).svg" alt="icon" />
+          </li>
+          <li class="weather-description-item">
+            <p>Humadity</p>
+            <p><span class="humadity">58</span>%</p>
+            <img src="img/icons/outline.svg" alt="icon" />
+          </li>
+          <li class="weather-description-item">
+            <p>Cloudy</p>
+            <p><span class="cloudy">86</span>%</p>
+            <img src="img/icons/outline (1).svg" alt="icon" />
+          </li>
+          <li class="weather-description-item">
+            <p>Wind</p>
+            <p><span class="wind">5</span> km/h</p>
+            <img src="img/icons/outline (2).svg" alt="icon" />
+          </li>
+        </ul>
       </div>
-    </section>
-  </body>
+    </div>
+  </div>
+  </section>
+</div>
+</body>
 </html>

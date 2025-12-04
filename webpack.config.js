@@ -31,7 +31,7 @@ module.exports = {
   },
   plugins: [
     new MiniCssExtractPlugin({ filename: "style.css" }),
-    new HtmlWebpackPlugin({ template: "./src/index.html" }),
+    new HtmlWebpackPlugin({ template: "./src/indexnew.html" }),
     new webpack.DefinePlugin({
       "process.env.API_KEY": JSON.stringify(process.env.API_KEY),
     }),

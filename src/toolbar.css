@@ -58,6 +58,8 @@ input:focus {
 }
 
 .search-icon {
+  background-color: transparent;
+  border: none;
   border-bottom: 1px solid #fff;
   padding-right: 1.6rem;
   width: 38px;
